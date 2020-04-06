@@ -21,6 +21,7 @@ class App {
         }
 //        $this->params = $url ? array_values($url) : [];
           $this->params = array_values($url);
+          print_r($this->params);
     }
 
     public function parseUrl() {
