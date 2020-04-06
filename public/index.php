@@ -1,5 +1,7 @@
 <?php
 
-echo ('OK');
+require_once '../app/init.php';
+
+$app = new App;
 
 ?>
