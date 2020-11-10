@@ -4,16 +4,21 @@ class Task {
 
     public $status = 0;
     public $tags = [];
-    public $priority;
+    public $color;
     public $description;
 
     public function __construct($description, $priority) {
         $this->description = $description;
-        $this->priority = $priority;
+        $this->priority($priority);
     }
 
-    public function taskStatus($x) {
+    public function status($x) {
         $this->status = $x; // 0: incomplete, 1: complete
+    }
+
+    public function priority($x) {
+        $color = ['red', 'magenta', 'violet', 'blue'];
+        $this->color = $color[$x];
     }
 
 }
