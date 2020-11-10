@@ -17,7 +17,7 @@ class Task {
     }
 
     public function priority($x) {
-        $color = ['red', 'magenta', 'violet', 'blue'];
+        $color = [1 => 'red', 2 => 'magenta', 3 => 'violet', 4 => 'blue'];
         $this->color = $color[$x];
     }
 
