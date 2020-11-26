@@ -1,0 +1,16 @@
+.priority1 {
+    /* Critical */
+    color:red;
+}
+.priority2 {
+    /* High */
+    color:magenta;
+}
+.priority3 {
+    /* Moderate */
+    color:violet;
+}
+.priority4 {
+    /* Low */
+    color:blue;
+}
