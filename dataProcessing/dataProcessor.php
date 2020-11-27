@@ -1,9 +1,5 @@
 <?php
 
-require_once 'dataAccess/DataStore.php';
-require_once 'dataAccess/DataStore.php';
-require_once 'dataProcessing/TaskManager.php';
-
 $dataFile = 'dataAccess/tasks.json';
 $dataStore = new DataStore($dataFile);
 
@@ -23,4 +19,8 @@ if($taskCompleted) {
 
 $taskList = $dataStore->getData() ?? [];
 
-require_once 'views/taskList.view.php';
+$viewData = ['taskList']; // in an advanced app, $viewData would have a lot more variables
+
+$view = 'taskList';
+
+view($view, compact($viewData));
